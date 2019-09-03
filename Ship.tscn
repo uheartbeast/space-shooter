@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Ship.gd" type="Script" id=1]
+[ext_resource path="res://Ship.png" type="Texture" id=2]
+
+[node name="Ship" type="Area2D"]
+script = ExtResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 2 )
+
+[node name="Collision" type="CollisionPolygon2D" parent="."]
+polygon = PoolVector2Array( -7, -4, -4, -4, -4, -7, -2, -7, 2, -2, 5, -2, 7, -1, 7, 1, 5, 2, 2, 2, -2, 7, -4, 7, -4, 4, -7, 4 )
