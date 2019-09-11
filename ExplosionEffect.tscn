@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Explosion.png" type="Texture" id=1]
+[ext_resource path="res://Explode.wav" type="AudioStream" id=2]
 
 [sub_resource type="Animation" id=1]
 resource_name = "Explode"
@@ -40,3 +41,7 @@ frame = 4
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 autoplay = "Explode"
 anims/Explode = SubResource( 1 )
+
+[node name="ExplodeSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 2 )
+autoplay = true
