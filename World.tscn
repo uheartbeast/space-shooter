@@ -35,3 +35,4 @@ custom_fonts/font = ExtResource( 5 )
 text = "Score = 0"
 align = 1
 valign = 1
+[connection signal="player_death" from="Ship" to="." method="_on_Ship_player_death"]
